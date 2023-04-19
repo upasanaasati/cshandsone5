@@ -1,0 +1,48 @@
+body{
+    background-color: yellow;
+}
+h1{
+    text-align: center;
+}
+.num{
+    margin-right: 10px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box1,.box2,.box3,.box4,.box5,.box6,.box7{
+    display: flex;
+    margin-left: 45%;
+    margin-bottom: 20px;
+}
+.row1,
+.row3,
+.row4,
+.row5,
+.row6,
+.row7{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: greenyellow;
+    transition: width 2s;
+}row3:hover,
+.row4:hover,
+.row5:hover,
+.row6:hover,
+.row7:hover{
+    width: 400px;
+}
+.row2{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: greenyellow;
+    transition: all 2s;
+}
+.row2:hover{
+    width: 200px;
+    height: 200px;
+}

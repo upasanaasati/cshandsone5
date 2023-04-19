@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.border{
+    width: 98.4%;
+    height: 100vh;
+    border: 10px solid;
+    border-color: white green white orange;
+    position: absolute;
+    z-index: 3;
+}
+.sky{
+    padding: 20px;
+    background-image: url(./sky.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+.title {
+    display: flex;
+    justify-content: center;
+}
+.happy {
+    background-color: orange;
+}
+.ind {
+    background-color: white;
+}
+.day {
+    background-color: green;
+}
+.happy, .ind, .day {
+    margin: 0 10px;
+}
+.road{
+    width: 500%;
+    background-image: url(./road.jpg);
+    height: 200px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+    animation: roadrun 5s infinite linear;
+}
+@keyframes roadrun{
+   0%{
+    transform: translateY(1px);
+   }
+    100%{
+        transform: translatex(-3000px);
+    }
+}
+.city{
+    position: relative;
+    bottom: 460px;
+    animation: cityrun 10s infinite linear;
+    background-image: url(./city.png);
+    width: 500%;
+    height: 220px;
+    background-repeat: repeat-x;
+}
+@keyframes cityrun{
+    0%{
+     transform: translateY(1px);
+    }
+     100%{
+         transform: translatex(-1000px);
+     }
+}
+.car{
+    width: 350px;
+    position: absolute;
+    bottom: 172px;
+    z-index: 5;
+    left: 381px;
+    animation: carrun 2s infinite linear;
+}
+@keyframes carrun{
+    0%{
+        transform: translateY(2px);
+       }
+}
+.wheel{
+    width: 50px;
+    position: absolute;
+    bottom: 185px;
+    z-index: 6;
+    left: 416px;
+    animation: rotate 0.1s infinite;
+}
+.wheel2{
+    width: 50px;
+    position: absolute;
+    bottom: 185px;
+    z-index: 7;
+    left: 633px;
+    animation: rotate 0.1s infinite;
+}
+@keyframes rotate{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+.flag{
+    width: 50px;
+    z-index: 8;
+    position: absolute;
+    left: 638px;
+    bottom: 260px;
+}
+.sun{
+    position: absolute;
+    left: 978px;
+    top: 95px;
+    width: 100px;
+}
